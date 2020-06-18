@@ -5,6 +5,26 @@
 > 本例只使用了一级路由，目的只是提取面包屑组件，想要多级路由的，在导航菜单加入多级，路由配置多级，在list中写入想要展示的面包屑级别。
 > 各组件使用是只需要import,注入components,在html中使用。
 
+### usage
+```
+<template>
+  <div class="summary-page">
+    <Bread />
+    <div>
+      这是首页
+    </div>
+  </div>
+</template>
+
+<script type="text/ecmascript-6">
+import Bread from '@/components/Breadcrumb';
+export default {
+  name: "Summary",
+  components: {Bread}
+};
+</script>
+```
+
 
 ## Project setup
 ```
